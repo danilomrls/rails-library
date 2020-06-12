@@ -2,7 +2,7 @@
 
 <h1>Librarians</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Email</th>
@@ -16,7 +16,7 @@
         <td><%= librarian.email %></td>
         <td><%= link_to 'Show', librarian %></td>
         <td><%= link_to 'Edit', edit_librarian_path(librarian) %></td>
-        <td><%= link_to 'Destroy', librarian, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', librarian, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
